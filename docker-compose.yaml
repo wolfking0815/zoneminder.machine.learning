@@ -6,7 +6,8 @@ services:
         restart: unless-stopped
         ports:
             - 8443:443/tcp
-            - 9000:9000/tcp
+            - 9100:9100/tcp
+            - 8899:8899/tcp
         network_mode: "bridge"
         privileged: false
         shm_size: 4G
@@ -17,8 +18,8 @@ services:
             - MULTI_PORT_START=0
             - MULTI_PORT_END=0
         volumes:
-            - config:/config:rw
-            - data:/var/cache/zoneminder:rw
+            - mwaycomms_zm_config:/config:rw
+            - mwaycomms_zm_data:/var/cache/zoneminder:rw
 volumes:
-    config:
-    data:
+    mwaycomms_zm_config:
+    mwaycomms_zm_data:
