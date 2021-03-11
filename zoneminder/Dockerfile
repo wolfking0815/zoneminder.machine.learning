@@ -135,12 +135,7 @@ RUN	apt-get -y clean && \
 	rm -rf /tmp/* /var/tmp/* && \
 	chmod +x /etc/my_init.d/*.sh
 
-FROM build8 as build9
-VOLUME \
-	["/config"] \
-	["/var/cache/zoneminder"]
-
-FROM build9 as build10
+FROM build8 as build10
 EXPOSE 443 9100 8899
 
 FROM build10

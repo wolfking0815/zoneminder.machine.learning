@@ -18,8 +18,8 @@ services:
             - MULTI_PORT_START=0
             - MULTI_PORT_END=0
         volumes:
-            - mwaycomms_zm_config:/config:rw
-            - mwaycomms_zm_data:/var/cache/zoneminder:rw
+            - config:/config:rw
+            - data:/var/cache/zoneminder:rw
 volumes:
-    mwaycomms_zm_config:
-    mwaycomms_zm_data:
+    config: {}
+    data: {}
