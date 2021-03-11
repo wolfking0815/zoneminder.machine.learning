@@ -112,7 +112,7 @@ if ( !try_use('JSON') ) {
 # configuration constants
 use constant {
   DEFAULT_CONFIG_FILE        => '/etc/zm/zmeventnotification.ini',
-  DEFAULT_PORT               => 9000,
+  DEFAULT_PORT               => 9100,
   DEFAULT_AUTH_ENABLE        => 'yes',
   DEFAULT_AUTH_TIMEOUT       => 20,
   DEFAULT_FCM_ENABLE         => 'yes',
