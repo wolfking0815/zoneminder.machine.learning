@@ -1,9 +1,9 @@
 version: '3.1'
 services:
     zoneminder:
-        container_name: zoneminder
-        image: dlandon/zoneminder.machine.learning:latest
-        restart: unless-stopped
+        build: ./zoneminder
+        container_name: zoneminder        
+        restart: always
         ports:
             - 8443:443/tcp
             - 9100:9100/tcp
