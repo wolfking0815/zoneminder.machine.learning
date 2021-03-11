@@ -6,7 +6,8 @@ services:
         restart: unless-stopped
         ports:
             - 8443:443/tcp
-            - 9000:9000/tcp
+            - 9100:9100/tcp
+            - 8899:8899/tcp
         network_mode: "bridge"
         privileged: false
         shm_size: 8G
