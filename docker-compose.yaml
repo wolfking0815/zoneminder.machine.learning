@@ -9,9 +9,9 @@ services:
             - 9000:9000/tcp
         network_mode: "bridge"
         privileged: false
-        shm_size: 8G
+        shm_size: 4G
         environment:
-            - TZ=America/New_York
+            - TZ=Europe/London
             - PUID=99
             - PGID=100
             - MULTI_PORT_START=0
